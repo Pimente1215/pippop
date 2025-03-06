@@ -16,6 +16,10 @@ function addSong(songName, artistName, songUrl) {
     //Agregar al html
     playList.appendChild(listSong);
 
+    const eliminar = document.querySelector(".delete-btn");
+    eliminar.addEventListener("click", ()=> {
+        listSong.remove()
+    })
 
 
 }
